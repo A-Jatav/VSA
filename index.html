@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Voice Selfie App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+</head>
+
+<body id="bodyx1">
+    <div class="container">
+        <center>
+            <a href="" id="downloadlink" download="selfie.png"></a>
+            <h1>Voice Selfie App <img src="icon.png"></h1>
+            <hr>
+            <h2 class="btn-danger">PLEASE CLICK ON ALLOW WHEN THE POPUP ASKING FOR PERMISSION TO ACCESS YOUR CAMERA AND
+                MICROPHONE SHOWS UP ON YOUR SCREEN AND PLEASE SPEAK IN ENGLISH ONLY</h2>
+            <div class="form-group">
+                <h3>Say: "Take My Selfie"</h3>
+                <label>Your Voice Output Will Show Up Here:</label>
+                <textarea readonly="true" class="form-control" id="voicetext"></textarea>
+            </div>
+            <button class="btn btn-info" onclick="recordx()"><img src="microphone.png"
+                    style="height: 20px; width: 20px;"></button>
+            <br>
+            <br>
+            <p>Press The Microphone Button To Start Recording Your Voice</p>
+            <label>Your Webcam View:</label>
+            <div id="camera"></div>
+            <br>
+            <label>Your Selfie:</label>
+            <div id="finalselfie"></div>
+        </center>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

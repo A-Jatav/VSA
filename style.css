@@ -1,0 +1,10 @@
+#bodyx1 {
+    background-color: aquamarine;
+    color: rgb(7, 99, 53);
+    text-align: center;
+}
+
+body h1 img {
+    width: 100px;
+    height: 100px;
+}
